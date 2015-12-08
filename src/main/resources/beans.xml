@@ -15,7 +15,7 @@
 		<constructor-arg ref="defaultHealthAbility"/>
 	</bean>
 	
-	<bean class="com.epam.training.springcore.domain.Card" name="jack">
+	<bean class="com.epam.training.springcore.domain.Card" name="jack" scope="prototype">
 		<constructor-arg value="jack"/>
 		<constructor-arg value="10"/>
 		<constructor-arg value="20"/>

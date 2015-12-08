@@ -15,7 +15,7 @@ public class App {
         	
         	Card card = context.getBean("john", Card.class);        	
             System.out.println(card);
-            card = context.getBean("john", Card.class);
+            card = context.getBean("jack", Card.class);
             System.out.println(card);
             card = context.getBean("jack", Card.class);
             System.out.println(card);
