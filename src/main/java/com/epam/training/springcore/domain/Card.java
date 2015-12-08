@@ -8,12 +8,12 @@ public class Card {
 	private int mana;
 	private Ability abality;
 	
-	public Card(String name, int damage, int lives, int mana) {
+	public Card(String name, int damage, int lives, int mana, Ability ability) {
 		this.name = name;
 		this.damage = damage;
 		this.lives = lives;
 		this.mana = mana;
-		this.abality = new HealthAbility(10);
+		this.abality = ability;
 	}
 
 	public int getLives() {

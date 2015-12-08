@@ -1,5 +1,9 @@
 package com.epam.training.springcore;
 
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+
 import com.epam.training.springcore.domain.Card;
 
 /**
@@ -8,7 +12,10 @@ import com.epam.training.springcore.domain.Card;
  */
 public class App {
     public static void main( String[] args ) {
-        Card card = new Card("myCard", 10, 20, 100);
+    	BeanFactory factory = new XmlBeanFactory(new ClassPathResource("beans.xml"));
+    	
+    	Card card = factory.getBean("myCard", Card.class);
+    	
         System.out.println(card);
         
     }
