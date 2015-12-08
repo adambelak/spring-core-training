@@ -13,9 +13,13 @@ public class App {
     public static void main( String[] args ) {
     	try (ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("beans.xml")) {
         	
-        	Card card = context.getBean("myCard", Card.class);
-        	
-            System.out.println(card);    		
+        	Card card = context.getBean("john", Card.class);        	
+            System.out.println(card);
+            card = context.getBean("john", Card.class);
+            System.out.println(card);
+            card = context.getBean("jack", Card.class);
+            System.out.println(card);
     	}
     }
 }
+

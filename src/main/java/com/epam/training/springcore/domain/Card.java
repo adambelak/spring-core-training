@@ -27,7 +27,7 @@ public class Card {
 	@Override
 	public String toString() {
 		return "Card [name=" + name + ", damage=" + damage + ", lives=" + lives + ", mana=" + mana + ", abality="
-				+ abality + "]";
+				+ abality + ", identity=" + System.identityHashCode(this) + "]";
 	}
 	
 }

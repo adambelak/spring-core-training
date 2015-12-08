@@ -7,11 +7,20 @@
 		<constructor-arg value="10"/>
 	</bean>
 
-	<bean class="com.epam.training.springcore.domain.Card" name="myCard">
-		<constructor-arg value="myCard"/>
+	<bean class="com.epam.training.springcore.domain.Card" name="john">
+		<constructor-arg value="john"/>
 		<constructor-arg value="10"/>
 		<constructor-arg value="20"/>
 		<constructor-arg value="100"/>
 		<constructor-arg ref="defaultHealthAbility"/>
 	</bean>
+	
+	<bean class="com.epam.training.springcore.domain.Card" name="jack">
+		<constructor-arg value="jack"/>
+		<constructor-arg value="10"/>
+		<constructor-arg value="20"/>
+		<constructor-arg value="100"/>
+		<constructor-arg ref="defaultHealthAbility"/>
+	</bean>
+	
 </beans>
